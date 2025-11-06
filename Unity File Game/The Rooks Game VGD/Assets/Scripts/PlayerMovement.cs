@@ -2,24 +2,21 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    [Header("Movement")]
-    public float moveSpeed = 8f;
-    public float acceleration = 10f;
-    public float deceleration = 10f;
+    public float moveSpeed = 10f;
+    public float acceleration = 18f;
+    public float deceleration = 30f;
 
-    [Header("Jumping")]
-    public float jumpForce = 15f;          // strong initial jump velocity
-    public float fallMultiplier = 4f;      // faster fall
-    public float lowJumpMultiplier = 5f;   // short hop if released early
+    public float jumpForce = 16f;
+    public float fallMultiplier = 6f;
+    public float lowJumpMultiplier = 8f;
 
-    [Header("Ground Check")]
     public Transform groundCheck;
     public float groundCheckRadius = 0.2f;
     public LayerMask groundLayer;
 
-    private Rigidbody2D rb;
-    private float moveInput;
-    private bool isGrounded;
+    Rigidbody2D rb;
+    float moveInput;
+    bool isGrounded;
 
     void Start()
     {
@@ -29,30 +26,24 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         moveInput = Input.GetAxisRaw("Horizontal");
-        isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
 
-        // --- JUMP: apply a single strong impulse ---
+        Collider2D hit = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
+        isGrounded = hit != null && hit.transform != null && Vector2.Dot(hit.transform.up, Vector2.up) > 0.5f;
+
         if (isGrounded && Input.GetButtonDown("Jump"))
-        {
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
-        }
+            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
 
-        // --- VARIABLE HEIGHT (snappy) ---
-        if (rb.linearVelocity.y < 0) // falling
-        {
-            rb.linearVelocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier - 1) * Time.deltaTime;
-        }
-        else if (rb.linearVelocity.y > 0 && !Input.GetButton("Jump")) // released early
-        {
-            rb.linearVelocity += Vector2.up * Physics2D.gravity.y * (lowJumpMultiplier - 1) * Time.deltaTime;
-        }
+        if (rb.velocity.y < 0)
+            rb.velocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier - 1) * Time.deltaTime;
+        else if (rb.velocity.y > 0 && !Input.GetButton("Jump"))
+            rb.velocity += Vector2.up * Physics2D.gravity.y * (lowJumpMultiplier - 1) * Time.deltaTime;
     }
 
     void FixedUpdate()
     {
-        // Smooth horizontal movement
-        float targetVelocityX = moveInput * moveSpeed;
-        float smoothVelocityX = Mathf.Lerp(rb.linearVelocity.x, targetVelocityX, (isGrounded ? acceleration : deceleration) * Time.fixedDeltaTime);
-        rb.linearVelocity = new Vector2(smoothVelocityX, rb.linearVelocity.y);
+        float target = moveInput * moveSpeed;
+        float rate = (Mathf.Abs(target) > 0.01f) ? acceleration : deceleration;
+        float newX = Mathf.Lerp(rb.velocity.x, target, rate * Time.fixedDeltaTime);
+        rb.velocity = new Vector2(newX, rb.velocity.y);
     }
 }
