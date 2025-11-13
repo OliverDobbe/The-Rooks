@@ -9,7 +9,7 @@ public class Player : MonoBehaviour
 
     [Header("Jumping")]
     public float jumpForce = 16f;
-    public float doubleJumpMultiplier = 0.75f; // weaker second jump
+    public float doubleJumpMultiplier = 0.75f;
     public float fallMultiplier = 7f;
     public float lowJumpMultiplier = 10f;
     public float holdGravityFactor = 0.2f;
@@ -19,11 +19,14 @@ public class Player : MonoBehaviour
     public bool enableDash = true;
     private bool canDoubleJump = false;
     private bool isDashing = false;
+
     public float dashStrength = 16f;
     public float dashDuration = 0.12f;
     public float dashCooldown = 0.35f;
     private float dashTimer;
     private float dashCooldownTimer;
+
+    private float storedVerticalVelocity;
 
     [Header("Ground Detection")]
     public Transform feet;
@@ -49,6 +52,7 @@ public class Player : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         rb.gravityScale = 3f;
+        rb.interpolation = RigidbodyInterpolation2D.Interpolate; // Fixes camera jitter
 
         if (currentCheckpoint != null)
             respawnPosition = currentCheckpoint.position;
@@ -56,19 +60,18 @@ public class Player : MonoBehaviour
             respawnPosition = transform.position;
 
         if (dashTrail != null)
-            dashTrail.emitting = false; // Disable trail emission initially
+            dashTrail.emitting = false;
     }
 
     void Update()
     {
         moveInput = Input.GetAxisRaw("Horizontal");
 
-        // Wall detection
         bool leftWall = Physics2D.Raycast(transform.position, Vector2.left, 0.1f, 1 << LayerMask.NameToLayer("Ground"));
         bool rightWall = Physics2D.Raycast(transform.position, Vector2.right, 0.1f, 1 << LayerMask.NameToLayer("Ground"));
         isOnWall = (leftWall || rightWall) && !isGrounded;
 
-        // ---- Jump ----
+        // -------- Jump --------
         if (Input.GetButtonDown("Jump"))
         {
             if (isGrounded)
@@ -81,17 +84,16 @@ public class Player : MonoBehaviour
                 rb.velocity = new Vector2(rb.velocity.x, jumpForce * doubleJumpMultiplier);
                 canDoubleJump = false;
 
-                // Spawn double jump particles
                 if (doubleJumpParticles != null)
                 {
-                    ParticleSystem particles = Instantiate(doubleJumpParticles, feet.position, Quaternion.identity);
-                    particles.Play();
-                    Destroy(particles.gameObject, particles.main.duration + particles.main.startLifetime.constantMax);
+                    ParticleSystem fx = Instantiate(doubleJumpParticles, feet.position, Quaternion.identity);
+                    fx.Play();
+                    Destroy(fx.gameObject, fx.main.duration + fx.main.startLifetime.constantMax);
                 }
             }
         }
 
-        // ---- Dash ----
+        // -------- Dash --------
         if (enableDash)
         {
             dashCooldownTimer -= Time.deltaTime;
@@ -102,12 +104,14 @@ public class Player : MonoBehaviour
             }
         }
 
-        // ---- Gravity ----
+        // -------- Gravity --------
         if (!isDashing)
         {
-            if (rb.velocity.y < 0f)
+            if (rb.velocity.y < 0)
+            {
                 rb.velocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier - 1f) * Time.deltaTime;
-            else if (rb.velocity.y > 0f)
+            }
+            else if (rb.velocity.y > 0)
             {
                 if (Input.GetButton("Jump"))
                     rb.velocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier * holdGravityFactor) * Time.deltaTime;
@@ -122,7 +126,9 @@ public class Player : MonoBehaviour
         if (isDashing)
         {
             dashTimer -= Time.fixedDeltaTime;
-            if (dashTimer <= 0f) EndDash();
+            if (dashTimer <= 0f)
+                EndDash();
+
             return;
         }
 
@@ -141,19 +147,24 @@ public class Player : MonoBehaviour
         rb.velocity = new Vector2(newX, rb.velocity.y);
     }
 
-    // ---- Dash Functions ----
+    // -------- DASH --------
     void StartDash()
     {
         isDashing = true;
         dashTimer = dashDuration;
         dashCooldownTimer = dashCooldown;
-        rb.velocity = new Vector2(Mathf.Sign(moveInput == 0 ? transform.localScale.x : moveInput) * dashStrength, 0f);
+
+        storedVerticalVelocity = rb.velocity.y; // KEEP vertical momentum
+
+        int dashDir = moveInput != 0 ? (int)Mathf.Sign(moveInput) : (int)Mathf.Sign(transform.localScale.x);
+
+        rb.velocity = new Vector2(dashStrength * dashDir, storedVerticalVelocity);
         rb.gravityScale = 0f;
 
         if (dashTrail != null)
         {
-            dashTrail.emitting = true; // start emitting trail
-            dashTrail.Clear();         // clear old trail
+            dashTrail.emitting = true;
+            dashTrail.Clear();
         }
     }
 
@@ -162,13 +173,14 @@ public class Player : MonoBehaviour
         isDashing = false;
         rb.gravityScale = 3f;
 
+        // Return vertical velocity exactly as it was
+        rb.velocity = new Vector2(rb.velocity.x, storedVerticalVelocity);
+
         if (dashTrail != null)
-        {
-            dashTrail.emitting = false; // stop emitting, trail fades naturally
-        }
+            dashTrail.emitting = false;
     }
 
-    // ---- Feet Trigger ----
+    // -------- TRIGGER EVENTS --------
     void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.layer == LayerMask.NameToLayer("Ground"))
@@ -196,9 +208,7 @@ public class Player : MonoBehaviour
     void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.gameObject.layer == LayerMask.NameToLayer("Ground"))
-        {
             isGrounded = false;
-        }
     }
 
     void Respawn()
