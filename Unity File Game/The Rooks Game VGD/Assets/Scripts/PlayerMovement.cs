@@ -76,12 +76,12 @@ public class Player : MonoBehaviour
         {
             if (isGrounded)
             {
-                rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+                rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
                 canDoubleJump = true;
             }
             else if (enableDoubleJump && canDoubleJump)
             {
-                rb.velocity = new Vector2(rb.velocity.x, jumpForce * doubleJumpMultiplier);
+                rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce * doubleJumpMultiplier);
                 canDoubleJump = false;
 
                 if (doubleJumpParticles != null)
@@ -107,16 +107,16 @@ public class Player : MonoBehaviour
         // -------- Gravity --------
         if (!isDashing)
         {
-            if (rb.velocity.y < 0)
+            if (rb.linearVelocity.y < 0)
             {
-                rb.velocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier - 1f) * Time.deltaTime;
+                rb.linearVelocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier - 1f) * Time.deltaTime;
             }
-            else if (rb.velocity.y > 0)
+            else if (rb.linearVelocity.y > 0)
             {
                 if (Input.GetButton("Jump"))
-                    rb.velocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier * holdGravityFactor) * Time.deltaTime;
+                    rb.linearVelocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier * holdGravityFactor) * Time.deltaTime;
                 else
-                    rb.velocity += Vector2.up * Physics2D.gravity.y * (lowJumpMultiplier - 1f) * Time.deltaTime;
+                    rb.linearVelocity += Vector2.up * Physics2D.gravity.y * (lowJumpMultiplier - 1f) * Time.deltaTime;
             }
         }
     }
@@ -143,8 +143,8 @@ public class Player : MonoBehaviour
 
         float target = moveInput * moveSpeed;
         float rate = (Mathf.Abs(target) > 0.01f) ? acceleration : deceleration;
-        float newX = Mathf.Lerp(rb.velocity.x, target, rate * Time.fixedDeltaTime);
-        rb.velocity = new Vector2(newX, rb.velocity.y);
+        float newX = Mathf.Lerp(rb.linearVelocity.x, target, rate * Time.fixedDeltaTime);
+        rb.linearVelocity = new Vector2(newX, rb.linearVelocity.y);
     }
 
     // -------- DASH --------
@@ -154,11 +154,11 @@ public class Player : MonoBehaviour
         dashTimer = dashDuration;
         dashCooldownTimer = dashCooldown;
 
-        storedVerticalVelocity = rb.velocity.y; // KEEP vertical momentum
+        storedVerticalVelocity = rb.linearVelocity.y; // KEEP vertical momentum
 
         int dashDir = moveInput != 0 ? (int)Mathf.Sign(moveInput) : (int)Mathf.Sign(transform.localScale.x);
 
-        rb.velocity = new Vector2(dashStrength * dashDir, storedVerticalVelocity);
+        rb.linearVelocity = new Vector2(dashStrength * dashDir, storedVerticalVelocity);
         rb.gravityScale = 0f;
 
         if (dashTrail != null)
@@ -174,7 +174,7 @@ public class Player : MonoBehaviour
         rb.gravityScale = 3f;
 
         // Return vertical velocity exactly as it was
-        rb.velocity = new Vector2(rb.velocity.x, storedVerticalVelocity);
+        rb.linearVelocity = new Vector2(rb.linearVelocity.x, storedVerticalVelocity);
 
         if (dashTrail != null)
             dashTrail.emitting = false;
@@ -214,6 +214,6 @@ public class Player : MonoBehaviour
     void Respawn()
     {
         transform.position = respawnPosition;
-        rb.velocity = Vector2.zero;
+        rb.linearVelocity = Vector2.zero;
     }
 }
