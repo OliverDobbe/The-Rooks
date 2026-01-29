@@ -1,0 +1,876 @@
+fileFormatVersion: 2
+guid: 33e0b5dd2da8da94bb323a2fa1deac77
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7116788288553735983
+    second: Robot Walk (1)_0
+  - first:
+      213: 321960270359834235
+    second: Robot Walk (1)_1
+  - first:
+      213: 1176372036068575015
+    second: Robot Walk (1)_2
+  - first:
+      213: -1489231659417953809
+    second: Robot Walk (1)_3
+  - first:
+      213: -9087319374660981318
+    second: Robot Walk (1)_4
+  - first:
+      213: 5081119220998410840
+    second: Robot Walk (1)_5
+  - first:
+      213: -5946127521058299847
+    second: Robot Walk (1)_6
+  - first:
+      213: 7669920901996998237
+    second: Robot Walk (1)_7
+  - first:
+      213: 4519476605016246001
+    second: Robot Walk (1)_8
+  - first:
+      213: -7873228185099661821
+    second: Robot Walk (1)_9
+  - first:
+      213: -401975041890799601
+    second: Robot Walk (1)_10
+  - first:
+      213: 1193829323610953356
+    second: Robot Walk (1)_11
+  - first:
+      213: -8332122507559377501
+    second: Robot Walk (1)_12
+  - first:
+      213: 4655131577397852369
+    second: Robot Walk (1)_13
+  - first:
+      213: 3087224140051908553
+    second: Robot Walk (1)_14
+  - first:
+      213: -7803958862031959201
+    second: Robot Walk (1)_15
+  - first:
+      213: 4980068637659643857
+    second: Robot Walk (1)_16
+  - first:
+      213: 3385555654704089244
+    second: Robot Walk (1)_17
+  - first:
+      213: 6160048973561945458
+    second: Robot Walk (1)_18
+  - first:
+      213: -2410277154432495028
+    second: Robot Walk (1)_19
+  - first:
+      213: 2559097519633377412
+    second: Robot Walk (1)_20
+  - first:
+      213: -3541201889704514779
+    second: Robot Walk (1)_21
+  - first:
+      213: 2100757514833356397
+    second: Robot Walk (1)_22
+  - first:
+      213: 707472792622987714
+    second: Robot Walk (1)_23
+  - first:
+      213: -4785452791218380640
+    second: Robot Walk (1)_24
+  - first:
+      213: 8489172050141529063
+    second: Robot Walk (1)_25
+  - first:
+      213: -8831432701508445777
+    second: Robot Walk (1)_26
+  - first:
+      213: -4327927622498504707
+    second: Robot Walk (1)_27
+  - first:
+      213: 5833292102123978451
+    second: Robot Walk (1)_28
+  - first:
+      213: 3292294007662896975
+    second: Robot Walk (1)_29
+  - first:
+      213: 726983112646802492
+    second: Robot Walk (1)_30
+  - first:
+      213: -7937446728107142205
+    second: Robot Walk (1)_31
+  - first:
+      213: -2133862412817565427
+    second: Robot Walk (1)_32
+  - first:
+      213: 3679792963333876714
+    second: Robot Walk (1)_33
+  - first:
+      213: -3058153692831391834
+    second: Robot Walk (1)_34
+  - first:
+      213: 1492855452493087776
+    second: Robot Walk (1)_35
+  - first:
+      213: -2468385189426463095
+    second: Robot Walk (1)_36
+  - first:
+      213: 6213688664377404162
+    second: Robot Walk (1)_37
+  - first:
+      213: -6290114866133334333
+    second: Robot Walk (1)_38
+  - first:
+      213: -3100041120800245339
+    second: Robot Walk (1)_39
+  - first:
+      213: -3097718438898087122
+    second: Robot Walk (1)_40
+  - first:
+      213: 4158861864797645448
+    second: Robot Walk (1)_41
+  - first:
+      213: 7412829874205261608
+    second: Robot Walk (1)_42
+  - first:
+      213: 5476005762322064009
+    second: Robot Walk (1)_43
+  - first:
+      213: -8405587478131536818
+    second: Robot Walk (1)_44
+  - first:
+      213: 2640176849748393407
+    second: Robot Walk (1)_45
+  - first:
+      213: 9060225890932216349
+    second: Robot Walk (1)_46
+  - first:
+      213: -337138855592925343
+    second: Robot Walk (1)_47
+  - first:
+      213: 959559212583447521
+    second: Robot Walk (1)_48
+  - first:
+      213: 3160152875483546176
+    second: Robot Walk (1)_49
+  - first:
+      213: 3139873268523552652
+    second: Robot Walk (1)_50
+  - first:
+      213: -5260108471185490235
+    second: Robot Walk (1)_51
+  - first:
+      213: 3240459746703448702
+    second: Robot Walk (1)_52
+  - first:
+      213: 2447651876508820360
+    second: Robot Walk (1)_53
+  - first:
+      213: -4042624779101381652
+    second: Robot Walk (1)_54
+  - first:
+      213: 4413155905845079247
+    second: Robot Walk (1)_55
+  - first:
+      213: 5370410677872823414
+    second: Robot Walk (1)_56
+  - first:
+      213: -3639838010549157284
+    second: Robot Walk (1)_57
+  - first:
+      213: 2602227267938410363
+    second: Robot Walk (1)_58
+  - first:
+      213: 4539888393809810002
+    second: Robot Walk (1)_59
+  - first:
+      213: -449847712347656777
+    second: Robot Walk (1)_60
+  - first:
+      213: 3751625606796222281
+    second: Robot Walk (1)_61
+  - first:
+      213: -5400654491453534101
+    second: Robot Walk (1)_62
+  - first:
+      213: -8527323429837796127
+    second: Robot Walk (1)_63
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Robot Walk (1)_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d8281702c61c3d90800000000000000
+      internalID: -7116788288553735983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Walk (1)_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7e269af825d77400800000000000000
+      internalID: 321960270359834235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Walk (1)_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72702955220535010800000000000000
+      internalID: 1176372036068575015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Walk (1)_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe9902032bf255be0800000000000000
+      internalID: -1489231659417953809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Walk (1)_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abdaec8ec2b53e180800000000000000
+      internalID: -9087319374660981318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Walk (1)_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8521505b203c38640800000000000000
+      internalID: 5081119220998410840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Walk (1)_6
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9306526068c1b7da0800000000000000
+      internalID: -5946127521058299847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Walk (1)_7
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5eefd26c68017a60800000000000000
+      internalID: 7669920901996998237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Walk (1)_8
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f68eace60868be30800000000000000
+      internalID: 4519476605016246001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Walk (1)_9
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30e8a870eacacb290800000000000000
+      internalID: -7873228185099661821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Walk (1)_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f00b68344d5eb6af0800000000000000
+      internalID: -401975041890799601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Walk (1)_11
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c869644d175519010800000000000000
+      internalID: 1193829323610953356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Walk (1)_12
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a5e2ef89ba5e5c80800000000000000
+      internalID: -8332122507559377501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Walk (1)_13
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d8b08571895a9040800000000000000
+      internalID: 4655131577397852369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Walk (1)_14
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c70ec1aff508da20800000000000000
+      internalID: 3087224140051908553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Walk (1)_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5bc2da13c4c2b390800000000000000
+      internalID: -7803958862031959201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Walk (1)_16
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1df34c85a02cc1540800000000000000
+      internalID: 4980068637659643857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Walk (1)_17
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c98c3f53ee8ebfe20800000000000000
+      internalID: 3385555654704089244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Walk (1)_18
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27d5b2477e3ec7550800000000000000
+      internalID: 6160048973561945458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Walk (1)_19
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c42dfcfb2b9fc8ed0800000000000000
+      internalID: -2410277154432495028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Walk (1)_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 488a45ba2adb38320800000000000000
+      internalID: 2559097519633377412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Walk (1)_21
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52b6836b4af1bdec0800000000000000
+      internalID: -3541201889704514779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Walk (1)_22
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d66efd654d3672d10800000000000000
+      internalID: 2100757514833356397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Walk (1)_23
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c9fb8ca1c271d900800000000000000
+      internalID: 707472792622987714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 22b02e44558f663469211c8cc7fc813d
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Robot Walk (1)_0: -7116788288553735983
+      Robot Walk (1)_1: 321960270359834235
+      Robot Walk (1)_10: -401975041890799601
+      Robot Walk (1)_11: 1193829323610953356
+      Robot Walk (1)_12: -8332122507559377501
+      Robot Walk (1)_13: 4655131577397852369
+      Robot Walk (1)_14: 3087224140051908553
+      Robot Walk (1)_15: -7803958862031959201
+      Robot Walk (1)_16: 4980068637659643857
+      Robot Walk (1)_17: 3385555654704089244
+      Robot Walk (1)_18: 6160048973561945458
+      Robot Walk (1)_19: -2410277154432495028
+      Robot Walk (1)_2: 1176372036068575015
+      Robot Walk (1)_20: 2559097519633377412
+      Robot Walk (1)_21: -3541201889704514779
+      Robot Walk (1)_22: 2100757514833356397
+      Robot Walk (1)_23: 707472792622987714
+      Robot Walk (1)_3: -1489231659417953809
+      Robot Walk (1)_4: -9087319374660981318
+      Robot Walk (1)_5: 5081119220998410840
+      Robot Walk (1)_6: -5946127521058299847
+      Robot Walk (1)_7: 7669920901996998237
+      Robot Walk (1)_8: 4519476605016246001
+      Robot Walk (1)_9: -7873228185099661821
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
